@@ -1,0 +1,41 @@
+{
+  "education": [
+    {
+      "degree": "YH Fullstack JavaScript",
+      "institution": "Chas Academy",
+      "period": "2025 — Present",
+      "description": "Fullstack JavaScript program focusing on React, Node.js, and modern web development"
+    },
+    {
+      "degree": "Fullstack Development",
+      "institution": "Lexicon",
+      "period": "2023",
+      "description": "Java, Spring Boot, React, MongoDB, REST; final project with JWT and RBAC"
+    },
+    {
+      "degree": "Bachelor of Science in Solid State Physics",
+      "institution": "University of Tehran",
+      "period": "2010 — 2015"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Programming Instructor",
+      "company": "Lexicon Småland",
+      "period": "Dec 2023 — Dec 2024",
+      "description": "Delivered 40+ lectures and live-coding sessions for 20+ students (Java, JavaScript, React). Created 3+ React projects and practical quizzes. Ran group workshops and code reviews."
+    },
+    {
+      "title": "Web Developer",
+      "company": "BehinSadra",
+      "period": "Mar 2016 — Feb 2017",
+      "description": "Developed web interfaces and 10+ reusable UI components using HTML, CSS, JavaScript. Collaborated in a 4-person agile team."
+    },
+    {
+      "title": "Web Developer",
+      "company": "MFT",
+      "period": "Dec 2015 — Mar 2016",
+      "description": "Implemented responsive layouts and UX improvements for production sites."
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - About</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <div class="logo-code">
+            <span class="bracket">&lt;</span>
+            <span class="name">negar</span>
+            <span class="bracket">/&gt;</span>
+          </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="tech-stack.html">Tech Stack</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a
+              href="https://negarbaharmand.com"
+              target="_blank"
+              class="blog-link"
+            >
+              Blog <i class="fas fa-external-link-alt"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://github.com/negarbaharmand"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/negarbaharmand"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/negarbaharmand/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- About Me Section -->
+        <section class="about-section">
+          <h1>About Me</h1>
+          <p>
+            I'm a fullstack developer fueled by curiosity and coffee ☕.
+            Building things from scratch is my happy place 💡 whether it's a
+            slick React/TypeScript interface or a solid Node.js/Express backend.
+            My instructor days taught me that the best code comes from great
+            conversations, so I thrive in collaborative, agile teams where ideas
+            bounce around freely 🤝. Always tinkering with new tech 🚀, always
+            advocating for accessibility and performance, always ready to pair
+            program.
+          </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-section">
+          <h2>Work Experience</h2>
+
+          <div class="experience-item">
+            <div class="experience-content">
+              <h3>Junior Web Developer</h3>
+              <div class="experience-details">
+                <span class="company"
+                  ><i class="fas fa-building"></i> Dr. Rajkumar's Learning
+                  App</span
+                >
+                <span class="location"
+                  ><i class="fas fa-map-marker-alt"></i> Bengaluru</span
+                >
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span class="badge full-time">Full Time</span>
+              <span class="date"
+                ><i class="fas fa-calendar"></i> Sep 2021 - Dec 2021</span
+              >
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-content">
+              <h3>Web Development Intern</h3>
+              <div class="experience-details">
+                <span class="company"
+                  ><i class="fas fa-building"></i> IonPixelz Web Solutions</span
+                >
+                <span class="location"
+                  ><i class="fas fa-map-marker-alt"></i> Bengaluru</span
+                >
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span class="badge internship">Internship</span>
+              <span class="date"
+                ><i class="fas fa-calendar"></i> Sep 2021 - Dec 2021</span
+              >
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-content">
+              <h3>SEO / SEM Specialist</h3>
+              <div class="experience-details">
+                <span class="company"
+                  ><i class="fas fa-building"></i> HAAPS</span
+                >
+                <span class="location"
+                  ><i class="fas fa-map-marker-alt"></i> Bengaluru</span
+                >
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span class="badge internship">Internship</span>
+              <span class="date"
+                ><i class="fas fa-calendar"></i> Sep 2021 - Dec 2021</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+          <h2>Education</h2>
+
+          <div class="education-item">
+            <div class="education-content">
+              <h3>Bachelor in Electronics & Communication</h3>
+              <div class="education-details">
+                <span class="institution"
+                  ><i class="fas fa-university"></i> Bangalore Institute of
+                  Technology</span
+                >
+              </div>
+            </div>
+            <div class="education-meta">
+              <span class="badge full-time">Full Time</span>
+              <span class="date"
+                ><i class="fas fa-calendar"></i> Aug 2015 - Oct 2020</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Designed and built by <span>Negar B</span> with
+          <span class="love">Love</span> & <span class="coffee">Coffee</span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+    <script src="./js/about.js"></script>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>
