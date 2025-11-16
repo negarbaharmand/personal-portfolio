@@ -1,0 +1,147 @@
+/* Contact Page Styles */
+
+.contact-section {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.contact-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: var(--text-gray);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* Contact Method */
+.contact-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin: 0 auto 40px;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(234, 88, 12, 0.1);
+}
+
+.contact-method i {
+  font-size: 40px;
+  color: var(--accent-primary);
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.contact-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--accent-hover);
+}
+
+/* Social Connect */
+.social-connect {
+  margin-top: 50px;
+}
+
+.social-connect h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+  border-radius: 50%;
+  color: var(--text-gray);
+  font-size: 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.social-icon:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content h1 {
+    font-size: 36px;
+  }
+
+  .contact-description {
+    font-size: 18px;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}

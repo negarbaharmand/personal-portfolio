@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Contact</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <div class="logo-code">
+            <span class="bracket">&lt;</span>
+            <span class="name">negar</span>
+            <span class="bracket">/&gt;</span>
+          </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tech-stack.html">Tech Stack</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li>
+            <a
+              href="https://negarbaharmand.com"
+              target="_blank"
+              class="blog-link"
+            >
+              Blog <i class="fas fa-external-link-alt"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://github.com/negarbaharmand"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/negarbaharmand"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/negarbaharmand/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="contact-content">
+          <h1>Get In Touch</h1>
+          <p class="contact-description">
+            Feel free to reach out for collaborations, opportunities, or just a
+            friendly chat!
+          </p>
+
+          <!-- Email -->
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-info">
+              <a href="mailto:negar@baharmand.com" class="contact-link">
+                negar@baharmand.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-connect">
+            <h3>Connect with me</h3>
+            <div class="social-icons">
+              <a
+                href="https://github.com/negarbaharmand"
+                target="_blank"
+                aria-label="GitHub"
+                class="social-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/negarbaharmand"
+                target="_blank"
+                aria-label="Twitter"
+                class="social-icon"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/negarbaharmand/"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Designed and built by <span>Negar B</span> with
+          <span class="love">Love</span> & <span class="coffee">Coffee</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/theme.js"></script>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
