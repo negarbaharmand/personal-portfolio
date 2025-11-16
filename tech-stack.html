@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Tech Stack</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/tech-stack.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <div class="logo-code">
+            <span class="bracket">&lt;</span>
+            <span class="name">negar</span>
+            <span class="bracket">/&gt;</span>
+          </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tech-stack.html" class="active">Tech Stack</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a
+              href="https://negarbaharmand.com"
+              target="_blank"
+              class="blog-link"
+            >
+              Blog <i class="fas fa-external-link-alt"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://github.com/negarbaharmand"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/negarbaharmand"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/negarbaharmand/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Tech Stack Header -->
+        <section class="tech-header">
+          <h1>Technical Skills</h1>
+        </section>
+
+        <!-- All Tech Icons in One Grid -->
+        <section class="tech-section">
+          <div class="tech-grid">
+            <!-- Frontend -->
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+              <span>React</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+              />
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+              />
+              <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+              <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                alt="Redux"
+              />
+              <span>Redux</span>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              />
+              <span>Node.js</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="Express"
+              />
+              <span>Express</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              />
+              <span>Java</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                alt="Spring Boot"
+              />
+              <span>Spring Boot</span>
+            </div>
+
+            <!-- Databases -->
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+              />
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+              />
+              <span>PostgreSQL</span>
+            </div>
+
+            <!-- DevOps/Tools -->
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              />
+              <span>Git</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"
+              />
+              <span>Docker</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+              />
+              <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="Postman"
+              />
+              <span>Postman</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Designed and built by <span>Negar B</span> with
+          <span class="love">Love</span> & <span class="coffee">Coffee</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/theme.js"></script>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
