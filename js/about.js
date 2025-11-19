@@ -1,7 +1,7 @@
 // Fetch CV data
 async function loadCVData() {
   try {
-    const response = await fetch("../data/cv-data.json");
+    const response = await fetch("data/cv-data.json");
     const data = await response.json();
 
     generateEducation(data.education);

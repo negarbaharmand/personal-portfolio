@@ -12,7 +12,7 @@ async function loadGitHubProjects() {
     // Fetch both GitHub API and local JSON
     const [githubResponse, jsonResponse] = await Promise.all([
       fetch(GITHUB_API),
-      fetch("../data/projects-data.json"),
+      fetch("data/projects-data.json"),
     ]);
 
     const githubRepos = await githubResponse.json();
