@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-A responsive portfolio website built with vanilla HTML, CSS, and JavaScript to showcase my work as a fullstack developer.
+A responsive portfolio website built with vanilla HTML, CSS, and JavaScript to showcase my work as a full-stack developer.
 
 ## 🚀 Features
 
@@ -18,7 +18,7 @@ A responsive portfolio website built with vanilla HTML, CSS, and JavaScript to s
 
 ## 🌐 Live Demo
 
-[View Live Site](https://negarbaharmand-personal-portfolio.netlify.app/)
+[View Live Site](https://negarbaharmand.com/)
 
 
 ## 📧 Contact
