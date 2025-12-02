@@ -1,59 +1,67 @@
-/* Projects Page Styles */
+/* Projects Page */
 main {
-  padding: 80px 0;
+  padding: 72px 0 96px;
   min-height: calc(100vh - 200px);
 }
 
-/* Projects Header */
+/* Header */
 .projects-header {
   text-align: left;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 }
 
 .projects-header h1 {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
 .projects-header p {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--text-dark);
-  line-height: 26px;
-  letter-spacing: 0px;
-  width: 214px;
-  height: 26px;
+  font-size: 18px;
+  color: var(--text-gray);
+  line-height: 1.5;
+  /* Remove fixed width/height that clipped text */
 }
 
-/* Projects Grid */
+/* Grid: fluid, gap consistent */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 62px 34px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
   max-width: 1204px;
   margin: 0 auto;
 }
 
+/* Card */
 .project-card {
   background: var(--card-bg);
-  border-radius: 20px;
-  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
   border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 200ms ease, box-shadow 200ms ease,
+    border-color 200ms ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(234, 88, 12, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(234, 88, 12, 0.18);
+  border-color: color-mix(
+    in oklab,
+    var(--accent-primary) 35%,
+    var(--border-color)
+  );
 }
 
-/* Project Image */
+/* Image: fixed aspect for clean rows */
 .project-image {
-  width: 100%;
-  height: 260px;
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10; /* keeps grid tidy */
   overflow: hidden;
 }
 
@@ -61,141 +69,130 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transform: scale(1.02);
+  transition: transform 300ms ease;
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
-/* Project Content */
+/* Content */
 .project-content {
-  padding: 27px 28px 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .project-content h3 {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   color: var(--text-dark);
-  line-height: 26px;
-  letter-spacing: 0px;
-  margin-bottom: 17px;
+  line-height: 1.25;
 }
 
-.project-content p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #666666;
-  line-height: 26px;
-  letter-spacing: 0px;
-  margin-bottom: 12px;
+.project-desc {
+  font-size: 16px;
+  color: var(--text-gray);
+  line-height: 1.6;
 }
 
-/* Tech Stack */
+/* Tech stack row */
 .tech-stack {
-  margin-bottom: 21px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .tech-stack span:first-child {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-dark);
 }
 
 .tech-list {
-  font-size: 14px;
-  font-weight: 300;
-  color: #a7a7a7;
+  font-size: 13px;
+  color: var(--text-light);
 }
 
-/* Project Links */
+/* Links row: consistent alignment */
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 .link-preview,
 .link-code {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.link-preview {
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-dark);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: color 180ms ease, border-color 180ms ease,
+    background-color 180ms ease, transform 120ms ease;
+  will-change: transform;
 }
 
-.link-preview:hover {
-  color: var(--accent-primary);
-  transform: translateX(3px);
-}
-
-.link-code {
-  color: var(--text-dark);
-}
-
+.link-preview:hover,
 .link-code:hover {
   color: var(--accent-primary);
-  transform: translateX(3px);
+  border-color: color-mix(in oklab, var(--accent-primary) 35%, transparent);
+  background: color-mix(in oklab, var(--accent-primary) 6%, transparent);
+  transform: translateY(-1px);
 }
 
 .link-preview i,
 .link-code i {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-/* Responsive Design */
+/* Dark mode polish */
+[data-theme="dark"] .project-card {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .link-preview:hover,
+[data-theme="dark"] .link-code:hover {
+  background: color-mix(in oklab, var(--accent-primary) 12%, transparent);
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px 30px;
+  .projects-header h1 {
+    font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
   main {
-    padding: 40px 0;
+    padding: 40px 0 64px;
   }
-
   .projects-header {
-    margin-bottom: 60px;
+    margin-bottom: 32px;
   }
-
   .projects-header h1 {
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-size: 30px;
   }
-
   .projects-header p {
-    font-size: 24px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .project-content h3 {
-    font-size: 24px;
-  }
-
-  .project-content p {
     font-size: 16px;
+  }
+  .project-content {
+    padding: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .project-content {
-    padding: 20px;
-  }
-
   .project-links {
     flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
+    align-items: stretch;
   }
-}
-.project-image img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
 }

@@ -5,7 +5,7 @@
       "repoName": "negarbaharmand-com",
       "description": "Personal blog with 20+ technical articles about web development, React, and JavaScript",
       "image": "./images/negarbaharmand-com.png",
-      "liveUrl": "https://negarbaharmand.com",
+      "liveUrl": "https://negarbaharmand.netlify.app/",
       "techStack": ["astro", "JavaScript"]
     },
     {
