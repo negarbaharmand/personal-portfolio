@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "ProjectName": "Personal Blog",
       "repoName": "negarbaharmand-com",
       "description": "Personal blog with 20+ technical articles about web development, React, and JavaScript",
       "image": "./images/negarbaharmand-com.png",
@@ -8,6 +9,15 @@
       "techStack": ["astro", "JavaScript"]
     },
     {
+      "ProjectName": "Deliciousness",
+      "repoName": "deliciousness",
+      "description": "Recipe discovery app with search functionality and external API integration",
+      "image": "./images/deliciousness.jpg",
+      "liveUrl": "https://deliciousness.vercel.app/",
+      "techStack": ["JavaScript", "React", "CSS"]
+    },
+    {
+      "ProjectName": "Sub Tracker",
       "repoName": "sub-tracker",
       "description": "REST API for subscription management with JWT authentication and automated email reminders",
       "image": "./images/sub-tracker.jpg",
@@ -15,13 +25,7 @@
       "techStack": ["Node.js", "Express", "MongoDB"]
     },
     {
-      "repoName": "react-calculator",
-      "description": "Interactive calculator with useReducer state management and CSS Grid layout",
-      "image": "./images/react-calculator.jpg",
-      "liveUrl": "https://negarbaharmand.github.io/react-calculator/",
-      "techStack": ["React", "JavaScript", "CSS"]
-    },
-    {
+      "ProjectName": "Marketplace API",
       "repoName": "marketplace-api",
       "description": "Enterprise backend for online marketplace with Spring Security and Swagger documentation",
       "image": "./images/marketplace-api.jpg",
@@ -29,18 +33,21 @@
       "techStack": ["Java", "Spring Boot"]
     },
     {
+      "ProjectName": "React Calculator",
+      "repoName": "react-calculator",
+      "description": "Interactive calculator with useReducer state management and CSS Grid layout",
+      "image": "./images/react-calculator.jpg",
+      "liveUrl": "https://negarbaharmand.github.io/react-calculator/",
+      "techStack": ["React", "JavaScript", "CSS"]
+    },
+
+    {
+      "ProjectName": "City Forecast",
       "repoName": "cityForecast",
       "description": "Weather application with OpenWeather API integration built using React and Vite",
       "image": "./images/cityForecast.jpg",
       "liveUrl": "https://negarbaharmand.github.io/cityForecast/",
       "techStack": ["JavaScript", "React", "API"]
-    },
-    {
-      "repoName": "deliciousness",
-      "description": "Recipe discovery app with search functionality and external API integration",
-      "image": "./images/deliciousness.jpg",
-      "liveUrl": "https://deliciousness.vercel.app/",
-      "techStack": ["JavaScript", "React", "CSS"]
     }
   ]
 }

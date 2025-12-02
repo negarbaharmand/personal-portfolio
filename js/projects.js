@@ -48,7 +48,7 @@ function createProjectCard(githubRepo, projectInfo) {
       <img src="${projectInfo.image}" alt="${githubRepo.name}" />
     </div>
     <div class="project-content">
-      <h3>${githubRepo.name}</h3>
+      <h3>${projectInfo.ProjectName}</h3>
       <p>${projectInfo.description}</p>
       <div class="tech-stack">
         <span>Tech stack:</span>
