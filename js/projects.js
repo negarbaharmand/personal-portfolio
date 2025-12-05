@@ -1,5 +1,5 @@
 const GITHUB_USERNAME = "negarbaharmand";
-const GITHUB_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+const GITHUB_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`;
 
 let REPO_CACHE = null;
 // Fetch and merge GitHub + JSON data
