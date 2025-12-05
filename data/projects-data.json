@@ -4,7 +4,7 @@
       "ProjectName": "Personal Blog",
       "repoName": "negarbaharmand-com",
       "description": "Personal blog with 20+ technical articles about web development, React, and JavaScript",
-      "image": "./images/negarbaharmand-com.png",
+      "image": "./images/negars-nook.jpg",
       "liveUrl": "https://negarbaharmand.netlify.app/",
       "techStack": ["astro", "JavaScript"]
     },
