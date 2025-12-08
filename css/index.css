@@ -1,7 +1,6 @@
 /* Hero Section */
 .hero {
   width: 100%;
-  min-height: calc(100vh - 200px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +52,8 @@
 
 .hero-text {
   flex: 1;
-  max-width: 636px;
+  max-width: 700px;
+  min-height: 300px;
 }
 
 .hero-text h1 {
@@ -97,6 +97,8 @@
   line-height: 70px;
   letter-spacing: -1px;
   transition: color 0.3s ease;
+  min-height: 70px; /* Prevents height changes */
+  display: inline-block;
 }
 
 /* Hero Image */
