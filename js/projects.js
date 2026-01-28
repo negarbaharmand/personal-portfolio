@@ -101,15 +101,13 @@ function createProjectCard(githubRepo, projectInfo) {
             <div class="project-links">
                 ${
                   liveUrl
-                    ? `<a class="link-preview" href="${liveUrl}" target="_blank" rel="noopener" aria-label="Live preview of ${ProjectName}">
+                    ? `<a class="link-preview" href="${escapeAttr(liveUrl)}" target="_blank" rel="noopener" aria-label="Live Preview: ${escapeAttr(ProjectName)}">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                                 <span>Live Preview</span>
                            </a>`
                     : ""
                 }
-                <a class="link-code" href="${
-                  githubRepo.html_url
-                }" target="_blank" rel="noopener" aria-label="Source code of ${ProjectName}">
+                <a class="link-code" href="${escapeAttr(githubRepo.html_url)}" target="_blank" rel="noopener" aria-label="View Code: ${escapeAttr(ProjectName)}">
                     <i class="fab fa-github" aria-hidden="true"></i>
                     <span>View Code</span>
                 </a>
