@@ -8,58 +8,21 @@
   padding: clamp(1.5rem, 4vw, 3rem) 0;
 }
 
-/* iOS-style wallpaper: soft gradient orbs. Use .terminal-hero.use-wallpaper-image
-   and set --terminal-bg-url: url('path/to/your.jpg') to use your own image. */
+/* Uses global iOS-style backdrop from base.css. Add .use-wallpaper-image
+   and set --terminal-bg-url to use your own image on the home hero. */
 .terminal-hero-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background:
-    radial-gradient(
-      ellipse 90% 80% at 75% 15%,
-      rgba(255, 200, 180, 0.45) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse 70% 70% at 15% 75%,
-      rgba(190, 220, 255, 0.4) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse 60% 60% at 50% 50%,
-      rgba(240, 220, 255, 0.25) 0%,
-      transparent 50%
-    ),
-    linear-gradient(165deg, #faf6f2 0%, #f2eeeb 45%, #ebe8f0 100%);
+  background: transparent;
 }
 
 .terminal-hero.use-wallpaper-image .terminal-hero-bg {
   background: var(--terminal-bg-url) center/cover no-repeat;
 }
 
-[data-theme="dark"] .terminal-hero-bg {
-  background:
-    radial-gradient(
-      ellipse 90% 80% at 75% 15%,
-      rgba(80, 60, 100, 0.25) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse 70% 70% at 15% 75%,
-      rgba(40, 60, 90, 0.2) 0%,
-      transparent 55%
-    ),
-    linear-gradient(165deg, #0f0f1a 0%, #151520 50%, #12121a 100%);
-}
-
-[data-theme="dark"] .terminal-hero.use-wallpaper-image .terminal-hero-bg {
-  background: var(--terminal-bg-url) center/cover no-repeat;
-}
-
-[data-theme="dark"]
-  .terminal-hero.use-wallpaper-image
-  .terminal-hero-bg::after {
+[data-theme="dark"] .terminal-hero.use-wallpaper-image .terminal-hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
