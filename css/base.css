@@ -118,6 +118,20 @@ body::before {
     linear-gradient(165deg, #0f0f1a 0%, #151520 50%, #12121a 100%);
 }
 
+/* Subtle iOS-style depth in dark mode: soft vignette at the edges */
+[data-theme="dark"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 85% 80% at 50% 50%,
+    transparent 45%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
+}
+
 /* Container */
 .container {
   width: 100%;
