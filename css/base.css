@@ -292,6 +292,11 @@ nav {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
 }
 
 .menu-toggle span {
@@ -307,12 +312,13 @@ main {
   flex: 1;
 }
 
-/* Footer */
+/* Footer – solid background for reliable WCAG AA contrast */
 footer {
   padding: 60px 0 40px;
   text-align: center;
   border-top: 1px solid var(--border-color);
-  transition: border-color 0.3s ease;
+  background-color: var(--background);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 footer p {
@@ -327,12 +333,15 @@ footer span {
   font-weight: 500;
 }
 
-footer .love {
-  color: var(--accent-primary);
+/* Darker accent in footer for 4.5:1 contrast on light background */
+footer .love,
+footer .coffee {
+  color: var(--accent-secondary);
 }
 
-footer .coffee {
-  color: var(--accent-primary);
+[data-theme="dark"] footer .love,
+[data-theme="dark"] footer .coffee {
+  color: var(--accent-light);
 }
 
 /* Responsive - Mobile First */

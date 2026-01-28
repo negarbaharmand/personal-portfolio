@@ -187,34 +187,40 @@
   transform: translateY(0);
 }
 
+/* Filled style for WCAG AA contrast (≥4.5:1): darker orange so white text passes */
 .terminal-cta {
   display: inline-block;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--accent-primary);
+  color: #fff;
+  background-color: var(--accent-secondary);
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid var(--accent-primary);
+  border: 1px solid var(--accent-secondary);
   border-radius: 8px;
   transition:
     background 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .terminal-cta:hover {
-  background: var(--accent-primary);
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
   color: #fff;
 }
 
 [data-theme="dark"] .terminal-cta {
-  color: var(--accent-light);
+  color: #0f172a;
+  background-color: var(--accent-light);
   border-color: var(--accent-light);
 }
 
 [data-theme="dark"] .terminal-cta:hover {
-  background: var(--accent-light);
-  color: #0f172a;
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
 }
 
 /* Responsive */

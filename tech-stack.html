@@ -20,7 +20,7 @@
     />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/base.css?v=2" />
     <link rel="stylesheet" href="./css/tech-stack.css" />
   </head>
   <body>
@@ -34,11 +34,11 @@
           </div>
         </a>
 
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
@@ -239,7 +239,9 @@
     <script>
       function toggleMenu() {
         const navMenu = document.querySelector(".nav-menu");
+        const btn = document.querySelector(".menu-toggle");
         navMenu.classList.toggle("active");
+        if (btn) btn.setAttribute("aria-expanded", navMenu.classList.contains("active"));
       }
     </script>
   </body>
