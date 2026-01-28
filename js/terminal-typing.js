@@ -109,6 +109,8 @@
     if (ctaWrap) {
       ctaWrap.classList.add("terminal-cta-visible");
       ctaWrap.removeAttribute("aria-hidden");
+      var ctaLink = document.getElementById("terminal-cta");
+      if (ctaLink) ctaLink.removeAttribute("tabindex");
     }
   }
 
