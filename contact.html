@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,7 +33,13 @@
           </div>
         </a>
 
-        <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <button
+          type="button"
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -47,7 +53,7 @@
           <li><a href="contact.html" class="active">Contact</a></li>
           <li>
             <a
-              href="https://negarbaharmand.netlify.app/"
+              href="https://blog.negarbaharmand.com/"
               target="_blank"
               class="blog-link"
             >
@@ -152,7 +158,11 @@
         const navMenu = document.querySelector(".nav-menu");
         const btn = document.querySelector(".menu-toggle");
         navMenu.classList.toggle("active");
-        if (btn) btn.setAttribute("aria-expanded", navMenu.classList.contains("active"));
+        if (btn)
+          btn.setAttribute(
+            "aria-expanded",
+            navMenu.classList.contains("active"),
+          );
       }
     </script>
   </body>

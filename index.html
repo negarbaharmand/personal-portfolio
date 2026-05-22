@@ -35,7 +35,13 @@
           </div>
         </a>
 
-        <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <button
+          type="button"
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -49,7 +55,7 @@
           <li><a href="contact.html">Contact</a></li>
           <li>
             <a
-              href="https://negarbaharmand.netlify.app/"
+              href="https://blog.negarbaharmand.com/"
               target="_self"
               class="blog-link"
             >
@@ -122,7 +128,11 @@
             id="terminal-cta-wrap"
             aria-hidden="true"
           >
-            <a href="projects.html" class="terminal-cta" id="terminal-cta" tabindex="-1"
+            <a
+              href="projects.html"
+              class="terminal-cta"
+              id="terminal-cta"
+              tabindex="-1"
               >cd projects</a
             >
           </p>
@@ -144,7 +154,11 @@
         const navMenu = document.querySelector(".nav-menu");
         const btn = document.querySelector(".menu-toggle");
         navMenu.classList.toggle("active");
-        if (btn) btn.setAttribute("aria-expanded", navMenu.classList.contains("active"));
+        if (btn)
+          btn.setAttribute(
+            "aria-expanded",
+            navMenu.classList.contains("active"),
+          );
       }
     </script>
     <script src="./js/theme.js"></script>
