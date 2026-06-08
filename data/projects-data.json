@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "ProjectName": "Litter Hero",
+      "repoName": "Litter-Hero",
+      "description": "A civic app where users report street litter by location and earn points for cleaning it up.",
+      "image": "./images/litter-hero.jpg",
+      "liveUrl": "https://github.com/negarbaharmand/Litter-Hero",
+      "techStack": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Node.js",
+        "Express"
+      ]
+    },
+    {
       "ProjectName": "Personal Blog",
       "repoName": "negarbaharmand-com",
       "description": "Personal blog with 20+ technical articles about web development, React, and JavaScript",
