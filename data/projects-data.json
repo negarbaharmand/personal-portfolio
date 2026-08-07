@@ -5,7 +5,7 @@
       "repoName": "Litter-Hero",
       "description": "A civic app where users report street litter by location and earn points for cleaning it up.",
       "image": "./images/litter-hero.png",
-      "liveUrl": "",
+      "liveUrl": "https://main-litter-hero.cc.k3s.chas-lab.dev/",
       "techStack": [
         "React",
         "JavaScript",
