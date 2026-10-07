@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Contact</title>
+    <title>Contact · Negar Baharmand</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <!-- CSS Files -->
     <link rel="stylesheet" href="./css/base.css" />
@@ -33,11 +33,17 @@
           </div>
         </a>
 
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <button
+          type="button"
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
@@ -49,35 +55,39 @@
             <a
               href="https://blog.negarbaharmand.com/"
               target="_blank"
+              rel="noopener noreferrer"
               class="blog-link"
             >
-              Blog <i class="fas fa-external-link-alt"></i>
+              Blog <i class="fas fa-external-link-alt" aria-hidden="true"></i>
             </a>
           </li>
           <li class="social-links">
             <a
               href="https://github.com/negarbaharmand"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github" aria-hidden="true"></i>
             </a>
             <a
               href="https://twitter.com/negarbaharmand"
               target="_blank"
-              aria-label="Twitter"
+              rel="noopener noreferrer"
+              aria-label="X"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-x-twitter" aria-hidden="true"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/negarbaharmand/"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </a>
             <button id="theme-toggle" aria-label="Toggle dark mode">
-              <i class="fas fa-moon"></i>
+              <i class="fas fa-moon" aria-hidden="true"></i>
             </button>
           </li>
         </ul>
@@ -87,51 +97,73 @@
     <main>
       <section class="contact-section">
         <div class="contact-content">
-          <h1>Get In Touch</h1>
+          <h1>Get in touch</h1>
           <p class="contact-description">
-            Feel free to reach out for collaborations, opportunities, or just a
-            friendly chat!
+            Email is the fastest way to reach me. I usually write back within
+            a couple of days (UTC+2).
           </p>
 
-          <!-- Email -->
           <div class="contact-method">
-            <i class="fas fa-envelope"></i>
             <div class="contact-info">
-              <a href="mailto:negar@baharmand.com" class="contact-link">
-                negar@baharmand.com
-              </a>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h2>Email</h2>
+                <a
+                  href="mailto:negar@baharmand.com?subject=Hello%20Negar"
+                  class="contact-link"
+                >
+                  negar@baharmand.com
+                </a>
+              </div>
             </div>
+            <a
+              href="mailto:negar@baharmand.com?subject=Hello%20Negar"
+              class="email-cta"
+            >
+              Email me
+            </a>
           </div>
 
-          <!-- Social Links -->
           <div class="social-connect">
-            <h3>Connect with me</h3>
-            <div class="social-icons">
-              <a
-                href="https://github.com/negarbaharmand"
-                target="_blank"
-                aria-label="GitHub"
-                class="social-icon"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://twitter.com/negarbaharmand"
-                target="_blank"
-                aria-label="Twitter"
-                class="social-icon"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/negarbaharmand/"
-                target="_blank"
-                aria-label="LinkedIn"
-                class="social-icon"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+            <h2>Other ways to connect</h2>
+            <ul class="connect-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/negarbaharmand/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                  <span class="connect-name">LinkedIn</span>
+                  <span class="connect-note">Professional introductions</span>
+                  <span class="visually-hidden"> (opens in a new tab)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/negarbaharmand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="connect-name">GitHub</span>
+                  <span class="connect-note">Code and projects</span>
+                  <span class="visually-hidden"> (opens in a new tab)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/negarbaharmand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                  <span class="connect-name">X</span>
+                  <span class="connect-note">@negarbaharmand</span>
+                  <span class="visually-hidden"> (opens in a new tab)</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -150,7 +182,13 @@
     <script>
       function toggleMenu() {
         const navMenu = document.querySelector(".nav-menu");
+        const btn = document.querySelector(".menu-toggle");
         navMenu.classList.toggle("active");
+        if (btn)
+          btn.setAttribute(
+            "aria-expanded",
+            navMenu.classList.contains("active"),
+          );
       }
     </script>
   </body>
