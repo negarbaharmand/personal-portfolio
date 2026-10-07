@@ -7,7 +7,6 @@ main {
   box-sizing: border-box;
 }
 
-/* Section Headings */
 h1 {
   font-size: 42px;
   font-weight: 700;
@@ -15,16 +14,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 40px;
-}
-
-/* About Me Section */
 .about-section {
-  margin-bottom: 100px;
   padding: 12px 0;
 }
 
@@ -36,139 +26,10 @@ h2 {
   max-width: 900px;
 }
 
-/* Work Experience & Education Sections */
-.work-section,
-.education-section {
-  margin-bottom: 100px;
+.about-section p + p {
+  margin-top: 24px;
 }
 
-/* Experience/Education Items */
-.experience-item,
-.education-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-  gap: 40px;
-  margin-bottom: 18px;
-}
-
-.experience-item:last-child,
-.education-item:last-child {
-  margin-bottom: 0;
-}
-
-/* Content Section */
-.experience-content,
-.education-content {
-  flex: 1;
-}
-
-.experience-content h3,
-.education-content h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 12px;
-}
-
-.experience-content p,
-.education-content p {
-  font-size: 16px;
-  color: var(--text-gray);
-  line-height: 1.6;
-  margin-top: 12px;
-}
-
-.experience-details,
-.education-details {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.company,
-.institution,
-.location {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.company i,
-.institution i,
-.location i {
-  font-size: 12px;
-}
-
-/* Meta Section */
-.experience-meta,
-.education-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
-  min-width: 180px;
-}
-
-/* Badges */
-.badge {
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-}
-
-.badge.full-time {
-  background-color: #d7ffe0;
-  color: #018c0f;
-}
-
-.badge.internship {
-  background-color: #ffedd5;
-  color: #ea580c;
-}
-.badge {
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  transition: transform 0.2s ease; /* Add this */
-}
-
-.badge:hover {
-  transform: translateY(-2px); /* Add this */
-}
-
-/* Date */
-.date {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-}
-
-.date i {
-  font-size: 12px;
-}
-
-/* Responsive Design */
 @media (max-width: 1024px) {
   main {
     padding: 40px 0;
@@ -177,32 +38,6 @@ h2 {
   h1 {
     font-size: 36px;
   }
-
-  h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-
-  .about-section,
-  .work-section,
-  .education-section {
-    margin-bottom: 60px;
-  }
-
-  .experience-item,
-  .education-item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px 0;
-  }
-
-  .experience-meta,
-  .education-meta {
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    min-width: auto;
-  }
 }
 
 @media (max-width: 768px) {
@@ -210,23 +45,7 @@ h2 {
     font-size: 32px;
   }
 
-  h2 {
-    font-size: 26px;
-  }
-
   .about-section p {
     font-size: 16px;
-  }
-
-  .experience-content h3,
-  .education-content h3 {
-    font-size: 20px;
-  }
-
-  .experience-details,
-  .education-details {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
   }
 }
